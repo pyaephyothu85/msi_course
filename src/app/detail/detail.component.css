@@ -1,0 +1,27 @@
+
+body{
+    background: fixed;
+    background-color: pink;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img{
+    float: left;
+    max-width: 30%;
+    height: auto;
+   row-gap: 100%;
+}
+
+.column-1{
+    float: right;
+    right: 40%;
+}
+
+.course-outline{
+ clear: both;
+text-transform: unset;
+}

@@ -1,0 +1,101 @@
+ <!-- <div class="container"> 
+     <h1> Course </h1>
+</div>
+
+  
+     <div class="cards-container" *ngFor="let course of courseLoop">
+      <figure class="card" >
+       
+        <div class="card__image">{{course.image}}</div>
+  
+        <div class="card__title-box">
+          <h2 class="card__title">{{ course.title }}</h2>
+        </div>
+   
+        <div class="card_description_box">
+          <h2 class="card_descrition">{{course.description}}</h2>
+        </div>
+
+        <div class="card__details">
+          <div class="card__detail-box">
+            <h6 class="card__detail card__detail-duration">{{course.duration}}</h6>
+          </div>
+  
+          <div class="card__detail-box">
+            <h6 class="card__detail">{{course.fee }}</h6>
+          </div>
+
+          <a class="card__link" routerLink="/detail/{{ course.id}}">
+          </a>
+    </div>
+  
+       
+   
+ 
+    
+    
+    <div class="cards-container" *ngFor="let course of courses">
+      <figure class="card" >
+        <div class="w3-container">
+          <h2>{{course.title}}</h2>
+        </div>
+        
+      <div class="w3-card-4" style="width:50%">
+        <div class="w3-container">
+   
+          <img src="{{course.image}}" alt="msi image" width="100%">
+          
+        </div>
+        <div class="w3-container w3-center">
+          <p>{{course.description}}</p>
+        </div>
+        <div class="w3-container w3-center">
+          <footer>
+            <div class="w3-container w3-center">
+              <p>{{course.duration}}</p>
+            </div>
+          </footer>
+        </div>
+        <div class="w3-containere w3-fee">
+          <footer>
+            <p>{{course.fee}}</p>
+          </footer>
+        </div>
+        <a class="card__link" href="/detail/{{course.id}}">
+          <button type="button" class="btn">Detail</button>
+        </a>
+    
+      </div>  -->
+
+ 
+ <div class="container">
+    <h1>MSI Course</h1>
+
+    <div class="item">
+      <ngx-skeleton-loader count="5" appearance="circle"></ngx-skeleton-loader>
+    </div>
+
+    
+    <div class="row d-flex flex-row mb-3">
+        <div class="card g-col-4 g-col-md-3 g- col-sm-1" *ngFor="let courses of courses">
+            <img class="card-img-top" src="{{courses.image}}" alt="courses image">
+            <div class="card-title">{{courses.title}}</div>
+            <div class="card-text discription">{{courses.description}}</div>
+            <div class="details">
+                <div class="duration">{{courses.duration}}</div>
+                <div class="fee">{{courses.fee}}</div>
+                <button class="btn btn-primary" >y
+                  
+                <a class="card-link" routerLink="/detail/{{courses.id}}">
+                        <i class="color">Details </i>
+                        <i class="emoji-right">✍🏼</i>
+                </a>
+            </button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
+      

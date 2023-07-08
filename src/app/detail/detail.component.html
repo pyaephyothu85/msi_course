@@ -1,0 +1,63 @@
+<!-- <div class="container">
+<figure class="deteail" >
+   
+    <a href="#" class="detail__back">
+      <span class="emoji-left">👈</span>Back
+    </a>
+    <img src="{{course.img_url}}" alt="course image">
+     <div class="detail__hero">
+      <span class="deteail_image deteail_image--1">{{course.image}}</span>
+      <span class="deteail_image deteail_image--2">{{course.image}}</span>
+      <span class="deteail_image deteail_image--3">{{course.image}}</span>
+      <span class="deteail_image deteail_image--4">{{course.image}}</span>
+      <span class="deteail_image deteail_image--5">{{course.image}}</span>
+      <span class="deteail_image deteail_image--6">{{course.image}}</span>
+      <span class="deteail_image deteail_image--7">{{course.image}}</span>
+      <span class="deteail_image deteail_image--8">{{course.image}}</span>
+    </div> -->
+
+<!-- <h2 class="detail_title">{{course.title}}</h2>
+   
+    <div class="product__details">
+      <p>{{course.description}}</p>
+      <p>>{{course.duration}}</p>
+      <p>{{course.fee}}</p>
+    </div>
+
+
+
+    <p class="deteail_courseoutline">
+      {{course.course_outline}}
+      
+    </p>
+  </figure>
+</div> -->
+<body>
+  <div class="container-fluid">
+    <a href="#" class="course-outlin__back">
+      <button class="btn btn-primary"><i class="emoji-left">👈🏼</i>back</button>
+    </a>
+
+    <div class="column lg-4">
+      <img src="{{ course.image }}" alt="Course Image" />
+    </div>
+    <div class="colum-1">
+      <h1>{{ course.title }}</h1>
+      <ul>
+        <li>
+          <strong>Overview:== </strong><i>{{ course.description }}</i>
+        </li>
+        <li>
+          <strong>Duration:==</strong><i>{{ course.duration }}</i>
+        </li>
+        <li>
+          <strong>Fee:==</strong><i>{{ course.fee }}</i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="course-outline">
+      <h2><strong>Course Outline</strong></h2>
+      <p class="list-group-item">{{ course.course_outline }}</p>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  </div>
+</body>

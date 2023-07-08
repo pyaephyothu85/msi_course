@@ -1,0 +1,96 @@
+
+.container {
+    color: #1303f7;
+    text-shadow: 0 2px 5px rgb(244, 248, 4);
+    background-color: rgb(188, 188, 245);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+    max-width: 200%;
+    max-height: 100%;
+}
+  
+.row {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+  
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.card {
+    background-color: rgb(179, 235, 240);
+    width: 300px;
+    border: 1px solid rgb(115, 139, 10); /* Reduced border width */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 45px auto 20px;
+    box-shadow: 0 5px 10px hwb(180 27% 73%);
+    display: inline-block;
+    box-sizing: border-box;
+}
+  
+.card img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+  
+.card .title {
+    text-shadow: 0 3px 6px white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+.card .course_outline {
+    text-shadow: 0 3px 6px white;
+    margin-top: 10px;
+}
+  
+.card .duration {
+    text-shadow: 0 4px 8px white;
+    color: rgb(107, 108, 3);
+    font-weight: bold;
+}
+  
+.card .fee {
+    text-shadow: 0 4px 8px white;
+    color: green;
+    font-weight: bold;
+    text-align: left;
+}
+  
+.card__link {
+    text-decoration: none;
+    color: black;
+}
+  
+.card__link span {
+    display: flex;
+    align-items: center;
+}
+  
+.emoji-right {
+    margin-left: 5px;
+}
+  
+.border-danger {
+    border-color: red;
+}
+.color{
+    color:#1303f7
+}
+
+.duration{
+    display:flex
+}
+
